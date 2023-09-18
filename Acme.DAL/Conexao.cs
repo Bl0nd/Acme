@@ -14,10 +14,23 @@ namespace Acme.DAL
         {
             try
             {
-                conn = new SqlConnection("Data Source=(localdb)\MSSQLLocaldb;Initial Catalog=BD_Acme;Integrated Security=True");
-                    conn.Open();
+                conn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocaldb;Initial Catalog=BD_Acme;Integrated Security=True");
+                conn.Open();
             }
-            catch (Exception ex) 
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        //Fecha a conexao com o banco de dados
+        protected void Desconectar()
+        {
+            try
+            {
+                conn.Close();
+            }
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
