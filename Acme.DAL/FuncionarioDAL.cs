@@ -13,17 +13,27 @@ namespace Acme.DAL
         //Método Cadastrar
         public void Cadastrar(FuncionarioDTO funcionario)
         {
-            //1º conecto no banco
-            Conectar();
-            //2º Montar o comando sql
-            cmd = newSqlCommand($"INSERT INTO Funcionario(IdDepartamento, IdCargo, Nome, Cpf, Email, Telefone, Sexo, DtNascimento, DtAdmissao, Logradouro, Numero, Complemento, Bairro, Cidade, Uf, Cep, SalarioBruto) VALUES({funcionario.IdDepartamento},{funcionario.IdCargo},'{funcionario.Nome}','{funcionario.Cpf}','{funcionario.Email}','{funcionario.Telefone}','{funcionario.Sexo}','{funcionario.DataNascimento}','{funcionario.DataAdmissao}','{funcionario.Logradouro}','{funcionario.Numero}','{funcionario.Complemento}','{funcionario.Bairro}','{funcionario.Cidade}','{funcionario.Uf}','{funcionario.Cep}','{funcionario.SalarioBruto}'})");
-            //3º Exeutar o comando
-            cmd.ExecuteNonQuery();
-
+            try
+            {
+                //1º conecto no banco
+                Conectar();
+                //2º Montar o comando sql
+                cmd = new SqlCommand($"INSERT INTO Funcionario(IdDepartamento, IdCargo, Nome, Cpf, Email, Telefone, Sexo, DtNascimento, DtAdmissao, Logradouro, Numero, Complemento, Bairro, Cidade, Uf, Cep, SalarioBruto) VALUES({funcionario.IdDepartamento},{funcionario.IdCargo},'{funcionario.Nome}','{funcionario.Cpf}','{funcionario.Email}','{funcionario.Telefone}','{funcionario.Sexo}','{funcionario.DtNascimento}','{funcionario.DtAdmissao}','{funcionario.Logradouro}','{funcionario.Numero}','{funcionario.Complemento}','{funcionario.Bairro}','{funcionario.Cidade}','{funcionario.Uf}','{funcionario.Cep}','{funcionario.SalarioBruto}')");
+                //3º Exeutar o comando
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Ocorreu um erro no INSERT");
+            }
+            finally
+            {
+                //4º Desconectar
+                Desconectar();
+            }
         }
 
-
-        //método alterar
+        //Método Alterar
 
         //método excluir
 

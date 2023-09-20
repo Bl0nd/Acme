@@ -1,0 +1,75 @@
+﻿<Window x:Class="Acme.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Acme.WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="#FF9C69F9">
+    <Grid RenderTransformOrigin="0.5,0.5" Margin="0,0,-13,-13">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="-0.11"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="373*"/>
+            <ColumnDefinition Width="427*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Nome" HorizontalAlignment="Left" Margin="17,41,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial"/>
+        <TextBox x:Name="TxtNome" HorizontalAlignment="Left" Margin="67,49,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" Width="120" Background="#FFEBAFFD" BorderBrush="#FFC51BF9" SelectionBrush="#FF1F2225"/>
+        <Label Content="CPF" HorizontalAlignment="Left" Margin="17,87,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial"/>
+        <TextBox x:Name="TxtCpf" HorizontalAlignment="Left" Margin="67,91,0,0" TextWrapping="Wrap" Text="CPF" VerticalAlignment="Top" Width="120" SelectionBrush="#FFE6A7F9" Background="#FFEBAFFD" BorderBrush="#FFE6A7F9"/>
+        <Label Content="E-mail" HorizontalAlignment="Left" Margin="17,132,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial"/>
+        <TextBox x:Name="TxtEmail" HorizontalAlignment="Left" Margin="67,136,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="120" BorderBrush="#FFE6A7F9" Background="#FFEBAFFD" SelectionBrush="#FFCA8EFF"/>
+        <Label Content="Telefone" HorizontalAlignment="Left" Margin="8,173,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial"/>
+        <TextBox x:Name="TxtTelefone" HorizontalAlignment="Left" Margin="67,180,0,0" TextWrapping="Wrap" Text="Telefone" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5" Background="#FFEBAFFD" BorderBrush="#FFCA8EFF" SelectionBrush="#FFCA8EFF" FontFamily="Arial">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-2.597"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.407"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label Content="Sexo" HorizontalAlignment="Left" Margin="18,217,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial"/>
+        <TextBox x:Name="TxtSexo" HorizontalAlignment="Left" Margin="67,220,0,0" TextWrapping="Wrap" Text="Sexo" VerticalAlignment="Top" Width="120" Background="#FFEBAFFD" BorderBrush="#FFEBAFFD"/>
+        <Label Content="Bairro" HorizontalAlignment="Left" Margin="124,42,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial" Grid.Column="1"/>
+        <TextBox x:Name="TxtBairro" HorizontalAlignment="Left" Margin="183,48,0,0" TextWrapping="Wrap" Text="Bairro" VerticalAlignment="Top" Width="120" Background="#FFEBAFFD" BorderBrush="#FFEBAFFD" Grid.Column="1"/>
+        <Label Content="Número" HorizontalAlignment="Left" Margin="229,165,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" Width="56" FontFamily="Arial"/>
+        <TextBox x:Name="TxtNumero1" HorizontalAlignment="Left" Margin="303,171,0,0" TextWrapping="Wrap" Text="Número" VerticalAlignment="Top" Width="120" Background="#FFEBAFFD" BorderBrush="#FFEBAFFD" Grid.ColumnSpan="2"/>
+        <Label Content="Nascimento" HorizontalAlignment="Left" Margin="221,49,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial"/>
+        <TextBox x:Name="TxtNumero" HorizontalAlignment="Left" Margin="301,52,0,0" TextWrapping="Wrap" Text="Número" VerticalAlignment="Top" Width="120" BorderBrush="#FFEBAFFD" Background="#FFEBAFFD" Grid.ColumnSpan="2"/>
+        <Label Content="Logradouro" HorizontalAlignment="Left" Margin="224,123,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial"/>
+        <TextBox x:Name="TxtLogradouro" HorizontalAlignment="Left" Margin="303,129,0,0" TextWrapping="Wrap" Text="Logradouro" VerticalAlignment="Top" Width="120" BorderBrush="#FFEBAFFD" Background="#FFEBAFFD" Grid.ColumnSpan="2"/>
+        <Label Content="Complemento" HorizontalAlignment="Left" Margin="217,212,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial"/>
+        <TextBox x:Name="TxtComplemento" HorizontalAlignment="Left" Margin="306,217,0,0" TextWrapping="Wrap" Text="Complemento" VerticalAlignment="Top" Width="120" BorderBrush="#FFEBAFFD" Background="#FFEBAFFD" Grid.ColumnSpan="2"/>
+        <Label Content="UF" HorizontalAlignment="Left" Margin="127,125,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial" Grid.Column="1"/>
+        <TextBox x:Name="TxtUf" HorizontalAlignment="Left" Margin="183,128,0,0" TextWrapping="Wrap" Text="Uf" VerticalAlignment="Top" Width="120" Background="#FFEBAFFD" BorderBrush="#FFEBAFFD" Grid.Column="1"/>
+        <Label Content="CEP" HorizontalAlignment="Left" Margin="124,173,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial" Grid.Column="1"/>
+        <TextBox x:Name="TxtCep" HorizontalAlignment="Left" Margin="183,173,0,0" TextWrapping="Wrap" Text="CEP" VerticalAlignment="Top" Width="120" BorderBrush="#FFEBAFFD" Background="#FFEBAFFD" Grid.Column="1"/>
+        <Label Content="Cidade" HorizontalAlignment="Left" Margin="124,85,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial" Grid.Column="1"/>
+        <TextBox x:Name="TxtCidade" HorizontalAlignment="Left" Margin="183,85,0,0" TextWrapping="Wrap" Text="Cidade" VerticalAlignment="Top" Width="120" BorderBrush="#FFEBAFFD" Background="#FFEBAFFD" Grid.Column="1"/>
+        <Label Content="Admissão" HorizontalAlignment="Left" Margin="224,88,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial"/>
+        <TextBox x:Name="TxtAdmissao" HorizontalAlignment="Left" Margin="301,93,0,0" TextWrapping="Wrap" Text="Admissão" VerticalAlignment="Top" Width="120" Background="#FFEBAFFD" BorderBrush="#FFEBAFFD" Grid.ColumnSpan="2"/>
+        <Label Content="Salário" HorizontalAlignment="Left" Margin="120,220,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial" Grid.Column="1"/>
+        <TextBox x:Name="TxtSalario" HorizontalAlignment="Left" Margin="183,220,0,0" TextWrapping="Wrap" Text="Salário" VerticalAlignment="Top" Width="120" Background="#FFEBAFFD" BorderBrush="#FFEBAFFD" Grid.Column="1"/>
+        <Label Content="Cargo" HorizontalAlignment="Left" Margin="191,309,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
+        <Label Content="Departamento" HorizontalAlignment="Left" Margin="68,309,0,0" VerticalAlignment="Top" FontFamily="Arial" Grid.Column="1"/>
+        <ComboBox x:Name="CmbCargo" HorizontalAlignment="Left" Margin="246,313,0,0" VerticalAlignment="Top" Width="120" BorderBrush="#FFEBAFFD" FontFamily="Arial">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#FFF0F0F0" Offset="0.87"/>
+                    <GradientStop Color="#FF9C69F9" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+        <ComboBox x:Name="CmbDepartamento" HorizontalAlignment="Left" Margin="183,313,0,0" VerticalAlignment="Top" Width="120" Background="Black" FontFamily="Arial" Grid.Column="1"/>
+        <Button x:Name="BtnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="300,395,0,0" VerticalAlignment="Top" Height="29" Width="103" Background="#FFEBAFFD" BorderBrush="#FFEBAFFD" FontFamily="Arial" FontWeight="Bold" Grid.Column="1" Click="BtnCadastrar_Click"/>
+
+    </Grid>
+</Window>

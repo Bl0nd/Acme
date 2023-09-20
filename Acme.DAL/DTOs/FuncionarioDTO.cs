@@ -15,8 +15,8 @@ namespace Acme.DAL.DTOs
         public string Email { get; set; }
         public string Telefone { get; set; }
         public string Sexo { get; set; }
-        public DateTime DataNascimento { get; set; }
-        public DateTime DataAdmissao { get; set; }
+        public DateTime DtNascimento { get; set; }
+        public DateTime DtAdmissao { get; set; }
         public string Logradouro { get; set; }
         public string Numero { get; set; }
         public string Complemento { get; set; }
