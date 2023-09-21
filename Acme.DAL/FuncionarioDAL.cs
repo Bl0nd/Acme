@@ -18,7 +18,7 @@ namespace Acme.DAL
                 //1º conecto no banco
                 Conectar();
                 //2º Montar o comando sql
-                cmd = new SqlCommand($"INSERT INTO Funcionario(IdDepartamento, IdCargo, Nome, Cpf, Email, Telefone, Sexo, DtNascimento, DtAdmissao, Logradouro, Numero, Complemento, Bairro, Cidade, Uf, Cep, SalarioBruto) VALUES({funcionario.IdDepartamento},{funcionario.IdCargo},'{funcionario.Nome}','{funcionario.Cpf}','{funcionario.Email}','{funcionario.Telefone}','{funcionario.Sexo}','{funcionario.DtNascimento}','{funcionario.DtAdmissao}','{funcionario.Logradouro}','{funcionario.Numero}','{funcionario.Complemento}','{funcionario.Bairro}','{funcionario.Cidade}','{funcionario.Uf}','{funcionario.Cep}','{funcionario.SalarioBruto}')");
+                cmd = new SqlCommand($"INSERT INTO Funcionario(IdDepartamento, IdCargo, Nome, Cpf, Email, Telefone, Sexo, DtNascimento, DtAdmissao, Logradouro, Numero, Complemento, Bairro, Cidade, Uf, Cep, SalarioBruto) VALUES({funcionario.IdDepartamento},{funcionario.IdCargo},'{funcionario.Nome}','{funcionario.Cpf}','{funcionario.Email}','{funcionario.Telefone}','{funcionario.Sexo}','{funcionario.DtNascimento.ToString("yyyy-MM-dd")}','{funcionario.DtAdmissao.ToString("yyyy-MM-dd")}','{funcionario.Logradouro}','{funcionario.Numero}','{funcionario.Complemento}','{funcionario.Bairro}','{funcionario.Cidade}','{funcionario.Uf}','{funcionario.Cep}','{funcionario.SalarioBruto}')");
                 //3º Exeutar o comando
                 cmd.ExecuteNonQuery();
             }
