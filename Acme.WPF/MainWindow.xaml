@@ -41,9 +41,9 @@
         <Label Content="Bairro" HorizontalAlignment="Left" Margin="124,42,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial" Grid.Column="1"/>
         <TextBox x:Name="TxtBairro" HorizontalAlignment="Left" Margin="183,48,0,0" TextWrapping="Wrap" Text="Bairro" VerticalAlignment="Top" Width="120" Background="#FFEBAFFD" BorderBrush="#FFEBAFFD" Grid.Column="1"/>
         <Label Content="Número" HorizontalAlignment="Left" Margin="229,165,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" Width="56" FontFamily="Arial"/>
-        <TextBox x:Name="TxtNumero1" HorizontalAlignment="Left" Margin="303,171,0,0" TextWrapping="Wrap" Text="Número" VerticalAlignment="Top" Width="120" Background="#FFEBAFFD" BorderBrush="#FFEBAFFD" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="TxtNumero" HorizontalAlignment="Left" Margin="303,171,0,0" TextWrapping="Wrap" Text="Número" VerticalAlignment="Top" Width="120" Background="#FFEBAFFD" BorderBrush="#FFEBAFFD" Grid.ColumnSpan="2"/>
         <Label Content="Nascimento" HorizontalAlignment="Left" Margin="221,49,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial"/>
-        <TextBox x:Name="TxtNumero" HorizontalAlignment="Left" Margin="301,52,0,0" TextWrapping="Wrap" Text="Número" VerticalAlignment="Top" Width="120" BorderBrush="#FFEBAFFD" Background="#FFEBAFFD" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="TxtDtNascimento" HorizontalAlignment="Left" Margin="301,52,0,0" TextWrapping="Wrap" Text="Nascimento" VerticalAlignment="Top" Width="120" BorderBrush="#FFEBAFFD" Background="#FFEBAFFD" Grid.ColumnSpan="2"/>
         <Label Content="Logradouro" HorizontalAlignment="Left" Margin="224,123,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial"/>
         <TextBox x:Name="TxtLogradouro" HorizontalAlignment="Left" Margin="303,129,0,0" TextWrapping="Wrap" Text="Logradouro" VerticalAlignment="Top" Width="120" BorderBrush="#FFEBAFFD" Background="#FFEBAFFD" Grid.ColumnSpan="2"/>
         <Label Content="Complemento" HorizontalAlignment="Left" Margin="217,212,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial"/>
