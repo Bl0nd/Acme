@@ -48,5 +48,6 @@ namespace Acme.WPF
             funcionario.IdDepartamento = Convert.ToInt32(CmbDepartamento.Text);
             funcionario.IdCargo = Convert.ToInt32(CmbCargo.Text);
         }
+
     }
 }
