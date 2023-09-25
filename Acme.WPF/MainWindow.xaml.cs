@@ -1,4 +1,5 @@
-﻿using Acme.DAL.DTOs;
+﻿using Acme.DAL;
+using Acme.DAL.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -49,5 +50,30 @@ namespace Acme.WPF
             funcionario.IdCargo = Convert.ToInt32(CmbCargo.Text);
         }
 
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            //Instancia a classe DAL
+            CargoDAL cargoDAL = new CargoDAL();
+            //2º Cria a variavel que vai receber o resultado
+            List<CargoDTO> cargos = new List<CargoDTO>();
+            //3º Executar o método
+            cargos = cargoDAL.Listar();
+            //4º Associar as combo box
+            CmbCargo.ItemsSource = cargos;
+            CmbCargo.DisplayMemberPath = "Nome";
+            CmbCargo.SelectedValuePath = "IdCargo";
+
+
+            //Instancia a classe Departamento DAL
+            DepartamentoDAL departamentoDAL = new DepartamentoDAL();
+            //2º Cria a variavel que vai receber o resultado
+            List<DepartamentoDTO> departamentos = new List<DepartamentoDTO>();
+            //3º Executar o método
+            departamentos = departamentoDAL.Listar();
+            //4º Associar as combo box
+            CmbDepartamento.ItemsSource = departamentos;
+            CmbDepartamento.DisplayMemberPath = "Nome";
+            CmbDepartamento.SelectedValuePath = "IdDepartamento";
+        }
     }
 }
