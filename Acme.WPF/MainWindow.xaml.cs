@@ -46,8 +46,8 @@ namespace Acme.WPF
             funcionario.Uf = TxtUf.Text;
             funcionario.Cep = TxtCep.Text;
             funcionario.SalarioBruto = Convert.ToDecimal(TxtSalario.Text);
-            funcionario.IdDepartamento = Convert.ToInt32(CmbDepartamento.Text);
-            funcionario.IdCargo = Convert.ToInt32(CmbCargo.Text);
+            funcionario.IdDepartamento = Convert.ToInt32(CmbDepartamento.SelectedValue);
+            funcionario.IdCargo = Convert.ToInt32(CmbCargo.SelectedValue);
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)

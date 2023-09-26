@@ -18,16 +18,17 @@
             <TransformGroup>
                 <ScaleTransform/>
                 <SkewTransform/>
-                <RotateTransform Angle="0.227"/>
+                <RotateTransform Angle="-0.192"/>
                 <TranslateTransform/>
             </TransformGroup>
         </Grid.RenderTransform>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10*"/>
-            <ColumnDefinition Width="385*"/>
-            <ColumnDefinition Width="444*"/>
+            <ColumnDefinition Width="358*"/>
+            <ColumnDefinition Width="471*"/>
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
         <Label Content="Nome" HorizontalAlignment="Left" Margin="7,41,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial" Grid.Column="1" Height="24" Width="42"/>
         <TextBox x:Name="TxtNome" HorizontalAlignment="Left" Margin="57,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFEBAFFD" BorderBrush="#FFC51BF9" SelectionBrush="#FF1F2225" Grid.Column="1" Height="18"/>
@@ -36,7 +37,7 @@
         <Label Content="E-mail" HorizontalAlignment="Left" Margin="7,132,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial" Grid.Column="1" Height="24" Width="44"/>
         <TextBox x:Name="TxtEmail" HorizontalAlignment="Left" Margin="57,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFE6A7F9" Background="#FFEBAFFD" SelectionBrush="#FFCA8EFF" Grid.Column="1" Height="18"/>
         <Label Content="Telefone" HorizontalAlignment="Left" Margin="8,173,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial" Grid.ColumnSpan="2" Height="24" Width="55"/>
-        <TextBox x:Name="TxtTelefone" HorizontalAlignment="Left" Margin="57,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5" Background="#FFEBAFFD" BorderBrush="#FFCA8EFF" SelectionBrush="#FFCA8EFF" FontFamily="Arial" Grid.Column="1" Height="16">
+        <TextBox x:Name="TxtTelefone" HorizontalAlignment="Left" Margin="57,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5" Background="#FFEBAFFD" BorderBrush="#FFCA8EFF" SelectionBrush="#FFCA8EFF" FontFamily="Arial" Grid.Column="1" Height="16">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -47,25 +48,25 @@
             </TextBox.RenderTransform>
         </TextBox>
         <Label Content="Sexo" HorizontalAlignment="Left" Margin="8,217,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial" Grid.Column="1" Height="24" Width="37" Grid.RowSpan="2"/>
-        <TextBox x:Name="TxtSexo" HorizontalAlignment="Left" Margin="57,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFEBAFFD" BorderBrush="#FFEBAFFD" Grid.Column="1" Height="24" Grid.RowSpan="2"/>
+        <TextBox x:Name="TxtSexo" HorizontalAlignment="Left" Margin="57,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFEBAFFD" BorderBrush="#FFEBAFFD" Grid.Column="1" Height="17"/>
         <Label Content="Bairro" HorizontalAlignment="Left" Margin="124,42,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial" Grid.Column="2" Height="24" Width="42"/>
         <TextBox x:Name="TxtBairro" HorizontalAlignment="Left" Margin="183,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFEBAFFD" BorderBrush="#FFEBAFFD" Grid.Column="2" Height="18"/>
-        <Label Content="Número" HorizontalAlignment="Left" Margin="219,165,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" Width="56" FontFamily="Arial" Grid.Column="1" Height="24"/>
-        <TextBox x:Name="TxtNumero" HorizontalAlignment="Left" Margin="293,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFEBAFFD" BorderBrush="#FFEBAFFD" Grid.ColumnSpan="2" Grid.Column="1" Height="18"/>
-        <Label Content="Nascimento" HorizontalAlignment="Left" Margin="211,49,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial" Grid.Column="1" Height="24" Width="73"/>
-        <TextBox x:Name="TxtDtNascimento" HorizontalAlignment="Left" Margin="291,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFEBAFFD" Background="#FFEBAFFD" Grid.ColumnSpan="2" Grid.Column="1" Height="18"/>
-        <Label Content="Logradouro" HorizontalAlignment="Left" Margin="214,123,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial" Grid.Column="1" Height="24" Width="71"/>
-        <TextBox x:Name="TxtLogradouro" HorizontalAlignment="Left" Margin="293,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFEBAFFD" Background="#FFEBAFFD" Grid.ColumnSpan="2" Grid.Column="1" Height="18"/>
-        <Label Content="Complemento" HorizontalAlignment="Left" Margin="207,212,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial" Grid.Column="1" Height="24" Width="85"/>
-        <TextBox x:Name="TxtComplemento" HorizontalAlignment="Left" Margin="296,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFEBAFFD" Background="#FFEBAFFD" Grid.ColumnSpan="2" Grid.Column="1" Height="22"/>
+        <Label Content="Número" HorizontalAlignment="Left" Margin="234,168,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" Width="56" FontFamily="Arial" Grid.Column="1" Height="24"/>
+        <TextBox x:Name="TxtNumero" HorizontalAlignment="Left" Margin="308,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFEBAFFD" BorderBrush="#FFEBAFFD" Grid.ColumnSpan="2" Grid.Column="1" Height="18"/>
+        <Label Content="Nascimento" HorizontalAlignment="Left" Margin="226,52,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial" Grid.Column="1" Height="24" Width="73"/>
+        <TextBox x:Name="TxtDtNascimento" HorizontalAlignment="Left" Margin="306,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFEBAFFD" Background="#FFEBAFFD" Grid.ColumnSpan="2" Grid.Column="1" Height="18"/>
+        <Label Content="Logradouro" HorizontalAlignment="Left" Margin="229,126,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial" Grid.Column="1" Height="24" Width="71"/>
+        <TextBox x:Name="TxtLogradouro" HorizontalAlignment="Left" Margin="308,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFEBAFFD" Background="#FFEBAFFD" Grid.ColumnSpan="2" Grid.Column="1" Height="18"/>
+        <Label Content="Complemento" HorizontalAlignment="Left" Margin="222,215,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial" Grid.Column="1" Height="24" Width="85"/>
+        <TextBox x:Name="TxtComplemento" HorizontalAlignment="Left" Margin="311,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFEBAFFD" Background="#FFEBAFFD" Grid.ColumnSpan="2" Grid.Column="1" Height="18"/>
         <Label Content="UF" HorizontalAlignment="Left" Margin="127,125,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial" Grid.Column="2" Height="24" Width="26"/>
         <TextBox x:Name="TxtUf" HorizontalAlignment="Left" Margin="183,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFEBAFFD" BorderBrush="#FFEBAFFD" Grid.Column="2" Height="18"/>
         <Label Content="CEP" HorizontalAlignment="Left" Margin="124,173,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial" Grid.Column="2" Height="24" Width="35"/>
         <TextBox x:Name="TxtCep" HorizontalAlignment="Left" Margin="183,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFEBAFFD" Background="#FFEBAFFD" Grid.Column="2" Height="18"/>
         <Label Content="Cidade" HorizontalAlignment="Left" Margin="124,85,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial" Grid.Column="2" Height="24" Width="48"/>
         <TextBox x:Name="TxtCidade" HorizontalAlignment="Left" Margin="183,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FFEBAFFD" Background="#FFEBAFFD" Grid.Column="2" Height="18"/>
-        <Label Content="Admissão" HorizontalAlignment="Left" Margin="214,88,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial" Grid.Column="1" Height="24" Width="63"/>
-        <TextBox x:Name="TxtAdmissao" HorizontalAlignment="Left" Margin="291,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFEBAFFD" BorderBrush="#FFEBAFFD" Grid.ColumnSpan="2" Grid.Column="1" Height="18"/>
+        <Label Content="Admissão" HorizontalAlignment="Left" Margin="229,91,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial" Grid.Column="1" Height="24" Width="63"/>
+        <TextBox x:Name="TxtAdmissao" HorizontalAlignment="Left" Margin="306,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFEBAFFD" BorderBrush="#FFEBAFFD" Grid.ColumnSpan="2" Grid.Column="1" Height="18"/>
         <Label Content="Salário" HorizontalAlignment="Left" Margin="120,220,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.571,-0.44" FontFamily="Arial" Grid.Column="2" Height="24" Width="47" Grid.RowSpan="2"/>
         <TextBox x:Name="TxtSalario" HorizontalAlignment="Left" Margin="183,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFEBAFFD" BorderBrush="#FFEBAFFD" Grid.Column="2" Height="22" Grid.RowSpan="2"/>
         <Label Content="Cargo" HorizontalAlignment="Left" Margin="181,13,0,0" VerticalAlignment="Top" FontFamily="Arial" Grid.Column="1" Height="24" Width="43" Grid.Row="2"/>
