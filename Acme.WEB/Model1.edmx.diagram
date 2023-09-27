@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="64306694f3d3425ba5410fa537c80555" Name="Diagram1">
+        <EntityTypeShape EntityType="BD_AcmeModel.Cargo" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_AcmeModel.Departamento" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_AcmeModel.Funcionario" Width="1.5" PointX="3" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_AcmeModel.Venda" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
+        <AssociationConnector Association="BD_AcmeModel.FK__Funcionar__IdCar__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="BD_AcmeModel.FK__Funcionar__IdDep__3A81B327" ManuallyRouted="false" />
+        <AssociationConnector Association="BD_AcmeModel.FK__Venda__IdFuncion__3E52440B" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -5,7 +5,9 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.DAL", "Acme.DAL\Acme.DAL.csproj", "{CA0D80BB-D8BD-4912-914B-58A3A23C54E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.WPF", "Acme.WPF\Acme.WPF.csproj", "{A323391E-A6CF-41FF-8776-B20D2BAF4BAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.WPF", "Acme.WPF\Acme.WPF.csproj", "{A323391E-A6CF-41FF-8776-B20D2BAF4BAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.WEB", "Acme.WEB\Acme.WEB.csproj", "{B82B36FA-8582-4899-AAD6-D87E832439B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A323391E-A6CF-41FF-8776-B20D2BAF4BAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A323391E-A6CF-41FF-8776-B20D2BAF4BAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A323391E-A6CF-41FF-8776-B20D2BAF4BAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B82B36FA-8582-4899-AAD6-D87E832439B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B82B36FA-8582-4899-AAD6-D87E832439B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B82B36FA-8582-4899-AAD6-D87E832439B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B82B36FA-8582-4899-AAD6-D87E832439B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
